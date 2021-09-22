@@ -4,7 +4,7 @@ LIC_FILES_CHKSUM = "file://Licenses/README;md5=30503fd321432fc713238f582193b78e"
 
 require u-boot-rockchip.inc
 
-DEPENDS += " bison-native rkbin "
+DEPENDS += "bison-native"
 
 SRC_URI = " \
     git://github.com/u-boot/u-boot \

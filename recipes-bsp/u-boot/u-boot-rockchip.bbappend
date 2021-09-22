@@ -3,6 +3,8 @@ inherit resin-u-boot
 
 FILESEXTRAPATHS_append := ":${THISDIR}/files"
 
+DEPENDS += "rkbin"
+
 # rework meta-resin patch whose context is different now in u-boot v2019.4
 SRC_URI_remove = "file://resin-specific-env-integration-kconfig.patch"
 
@@ -22,3 +24,5 @@ do_compile_append_isg-503() {
     cat ${DEPLOY_DIR_IMAGE}/rkbin/px30_miniloader_v1.15.bin >> idbloader.bin
     ${DEPLOY_DIR_IMAGE}/rkbin/tools/loaderimage --pack --uboot ./u-boot-dtb.bin uboot.img 0x200000
 }
+
+do_compile[depends] += "rkbin:do_deploy"
