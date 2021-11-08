@@ -14,6 +14,8 @@ SRC_URI = " \
 	file://0004-recktech-add-rtc-rx8010.patch \
 	file://0005-recktech-fix-wifierror.patch \
 	file://0004-recktech-modify_ttyName.patch \
+	file://0007-rocktech-remove-uuid.patch \
+	file://0008-rocktech-fix-reboot.patch \
 	"
 
 SRCREV = "eed2c2aa9f3899876861c7500ec5b2e7550b819d"

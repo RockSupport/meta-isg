@@ -1,0 +1,13 @@
+diff --git a/arch/arm64/boot/dts/rockchip/px30-linux.dtsi b/arch/arm64/boot/dts/rockchip/px30-linux.dtsi
+index e6ae3484e0c1..3bfa255d709f 100755
+--- a/arch/arm64/boot/dts/rockchip/px30-linux.dtsi
++++ b/arch/arm64/boot/dts/rockchip/px30-linux.dtsi
+@@ -44,7 +44,7 @@
+ 	compatible = "rockchip,linux", "rockchip,rk3326";
+ 
+ 	chosen {
+-		bootargs = "earlycon=uart8250,mmio32,0xff160000 swiotlb=1 console=ttyFIQ0 rw root=PARTUUID=614e0000-0000 rootwait";
++		bootargs = "earlycon=uart8250,mmio32,0xff160000 swiotlb=1 console=ttyFIQ0 rw rootwait";
+ 	};
+ 
+ 	fiq-debugger {

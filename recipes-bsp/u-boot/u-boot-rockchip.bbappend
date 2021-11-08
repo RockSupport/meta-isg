@@ -9,14 +9,14 @@ DEPENDS += "rkbin"
 SRC_URI_remove = "file://resin-specific-env-integration-kconfig.patch"
 
 SRC_URI_append_isg-503 = " \
-    file://0000-rocktech-isg-503-spl.patch \
-	file://0001-rocktech-isg-503-dts.patch \
-	file://0003-rocktech-isg-503-px30.patch \
-	file://0004-rocktech-isg-503-ota.patch \
-	file://0005-rocktech-isg-503-gmac.patch \
+	file://0001-rocktech-Makefile.patch\
+	file://0002-rocktech-isg-503-arch.patch \
+	file://0003-rocktech-isg-503-evb.patch \
+	file://0004-rocktech-isg-503-config.patch \
+	file://0005-rocktech-isg-503-dts.patch \
+	file://0006-rocktech-isg-503-part.patch \
 "
 
-SRCREV_isg-503  = "v2019.10"
 
 
 do_compile_append_isg-503() {

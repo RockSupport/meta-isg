@@ -1,14 +1,15 @@
 DESCRIPTION = "Rocktech ISG503 U-Boot"
 LICENSE = "GPLv2+"
-LIC_FILES_CHKSUM = "file://Licenses/README;md5=30503fd321432fc713238f582193b78e"
-
+LIC_FILES_CHKSUM = "file://Licenses/README;md5=a2c678cfd4a4d97135585cad908541c6"
 require u-boot-rockchip.inc
-
 DEPENDS += "bison-native"
 
+
 SRC_URI = " \
-    git://github.com/u-boot/u-boot \
+    git://github.com/rockchip-linux/u-boot.git;branch=next-dev \
 "
+
+SRCREV = "65c356141d79b7380748344d558b3871061c907a"
 
 S = "${WORKDIR}/git"
 
